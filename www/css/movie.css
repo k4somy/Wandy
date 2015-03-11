@@ -1,0 +1,12 @@
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+
+    background: url(../img/background_ex.jpg) no-repeat center center fixed; 
+    background-color: #000000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: covr;
+  background-size: contain; /*contain코드는 배경 이미지를 가장 적합한 사이즈로 보여주는 기능*/
+}

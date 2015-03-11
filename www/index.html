@@ -1,0 +1,58 @@
+
+<!-- command에 /를 누르면 자동 (<!-  ->)이 된다.-->
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/wandy.css" />
+        <title>Hello World</title>
+    </head>
+    <body>
+
+
+<!-- bgm 플레이 /controls는 기본컨트롤로 오디오바가 나옴/autoplay는 자동재생/loop은 연속재생/ audio 추가시 항상</audio>로 마무리-->
+ <!-- <audio class="player" src="bowl_달칵.wav" autoplay loop> -->
+ <audio class="player" src="desert_night.aiff" preload="auto">
+<p>Your browser does not support the audio element </p>
+<!-- </audio> -->
+</audio>
+
+      <!-- 이미지 탭핑해서 링크타는 법
+        <div class="img">
+            <a target="_blank" href="spec.html"><img src="robot.png" alt="wandy" width="110" height="90"></a>
+             <div class="desc">welcome to the wandy's land!</div>
+        </div>
+        -->
+
+<!-- 이미지 탭핑해서 페이지만 이동하는 법(하단)-->
+<a href="movie.html"> <!-- a코드를 이용해 다른 페이지 내용이 저장된 html파일을 입력 후 아이콘 정보를 입력하하면 바로 페이지로 링크됨-->
+        <div class="page" data-page="home">
+          <div class="page-content">
+            <!--html이용해서 이미지 탭핑
+            <a href="spec.html"> <img src="img/robot.png"> </a> 
+          </div> -->
+        </div>
+      </div>
+  </a>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            var v = document.getElementsByTagName("audio")[0];
+            v.play();
+        });
+                    
+        </script>
+        <script type="text/javascript">
+            
+            app.initialize();
+        </script>
+    </body>
+</html>
